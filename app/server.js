@@ -10,6 +10,7 @@ const home = require("./src/route");
 //앱 세팅
 app.set("views", "./src/front");
 app.set("view engine", "ejs");
+app.use(express.static(`${__dirname}/src/public`));
 
 //아이콘 설정
 app.use(express.static(path.join(__dirname, 'images')));

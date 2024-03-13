@@ -5,8 +5,6 @@
 }
 
 body{
-  font-size: 14px;
-  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
@@ -60,44 +58,53 @@ img {
   background-color: black;
 }
 
-.login-wrapper{
-  width: 400px;
-  height: 350px;
-  padding: 40px;
-  display: table-cell;
-  height: auto;
-  vertical-align: middle;
-  width: auto
+input {
+  padding-left: 15px;
+  font-size: 20px;
 }
 
-.login-wrapper > h2{
-  font-size: 24px;
-  color: #6A24FE;
+
+#login-logo {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#ID {
+  position: absolute;
+  width: 20rem;
+  height: 4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F5F5F5;
+  border-radius: 15px;
+}
+
+#Password {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 6rem;
+  width: 20rem;
+  height: 4rem;
+  background-color: #F5F5F5;
+  border-radius: 15px;
+}
+
+#login-text {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
+  position: absolute;
+  color: #005791;
+  font-size: 35px;
   font-style: normal;
-  margin-bottom: 20px;
+  font-weight: 900;
+  line-height: normal;
+  left: 50%; 
+  top: 17rem; 
+  transform: translate(-50%, -50%);
 }
 
-#login-form > input{
-  width: 100%;
-  height: 48px;
-  padding: 0 10px;
-  box-sizing: border-box;
-  margin-bottom: 16px;
-  border-radius: 6px;
-  background-color: #F8F8F8;
-}
-
-#login-form > input::placeholder{
-  color: #D2D2D2;
-}
-
-#login-form > input[type="submit"]{
-  color: #fff;
-  font-size: 16px;
-  background-color: #6A24FE;
-  margin-top: 20px;
-}
 

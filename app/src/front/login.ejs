@@ -3,9 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/js/main/login.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css"/>
+  <link rel="stylesheet" href="css/main/login.css">
   <title>로그인</title>
 </head>
 <body>
-  
+  <nav class="navbar">
+    <div class="navbar__logo">
+        <a href="/main.html"><img src="css/main/logo.png" width="64" height="64"></a>
+    </div>
+    
+    <div class="navbar__menu">
+        <li><a href="">탑승여부</a></li>
+        <li><a href="">노선변경</a></li>
+        <li><a href="/login.html">로그인</a></li>
+    </div>
+    <div class="line"></div>
+</nav>
+<div class="login-wrapper">
+  <h2>Login</h2>
+  <form method="post" action="서버의url" id="login-form">
+      <input type="text" name="userName" placeholder="아이디">
+      <input type="password" name="userPassword" placeholder="비밀번호">
+      <input type="submit" value="로그인">
+  </form>
+</div>
 </body>
 </html>
